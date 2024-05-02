@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body style="background-color: rgb(255, 240, 157);">
+        <table border="3" align="center" height="550" width="600" style="background-color: rgb(248, 248, 248);">
+            <caption><font size="8" style="background-color: rgb(159, 159, 253);"><b>Registration Form</b></font></caption>
+            <thead>
+                <tr>
+                    <td width="200">Enter your first name</td>
+                    <td><input type="text" name="fn" maxlength="20" title="Enter your first name" placeholder="Enter your first name" required/></td>
+                </tr>
+                <tr>
+                    <td>Enter your last name</td>
+                    <td><input type="text" name="ln" maxlength="20" title="Enter your last name" placeholder="Enter your last name" required/></td>
+                </tr>
+                <tr>
+                    <td>Enter your password</td>
+                    <td><input type="password" name="pw" maxlength="8" title="Enter your password" placeholder="Enter your password" required/></td>
+                </tr>
+                <tr>
+                    <td>Re-enter your password</td>
+                    <td><input type="password" name="pw" maxlength="8" title="Re-enter your password" placeholder="Re-enter your password" required/></td>
+                </tr>
+                <tr>
+                    <td>Enter your email-id</td>
+                    <td><input type="email" name="em" maxlength="50" title="Enter your email-id" placeholder="Enter your email-id" required/></td>
+                </tr>
+                <tr>
+                    <td>Enter your contact no.</td>
+                    <td><input type="text" name="cn" maxlength="10" title="Enter your contact no." placeholder="Enter your contact no." required/></td>
+                </tr>
+                <tr>
+                    <td>Why this hackathon?</td>
+                    <td><textarea rows="10" cols="20"></textarea></td>
+                </tr>
+                <tr>
+                    <td>Select your gender</td>
+                    <td>male<input type="radio" name="g" value="m"> female<input type="radio" name="g" value="f"></td>
+                </tr>
+                <tr>
+                    <td>Select your hobbies</td>
+                    <td>Coding<input type="checkbox" value="c"> Designing<input type="checkbox" value="d"> Testing<input type="checkbox" value="t"></td>
+                </tr>
+                <tr>
+                    <td>Select your DOB</td>
+                    <td><input type="date"></td>
+                </tr>
+                <tr>
+                    <td>Select your country</td>
+                    <td><select name="country">
+                        <option value="" selected="selected"  
+                        disabled="disabled">Select your 
+                        country</option>
+                             <option value="1">India</option>
+                             <option value="2">Pakistan</option>
+                             <option value="3">USA</option>
+                             <option value="4">South Korea</option> </select>
+          </td>
+                </tr>
+                <tr>
+                    <td>Upload your previous work</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2"><input type="submit" value="Save my data"> <input type="reset" value="Reset my data"></td>
+                </tr>
+            </thead>
+        </table>        
+        
+    </body>
+</html>

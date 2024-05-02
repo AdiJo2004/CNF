@@ -1,0 +1,326 @@
+body{
+    overflow-x: hidden;
+}
+.navigation{
+    position: fixed;
+    top:0px;
+    width: 100%;
+    padding: 5px 5px;
+    border-color: rgb(194, 191, 34);
+    border-width: 100px;
+    z-index: 1;
+    background-color: rgb(255, 255, 248);
+    height: 40px;
+    border-radius: 5px 5px 5px 5px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 7px;
+   
+}
+nav{
+    position: fixed;
+    margin: 0px;
+    font-size: 20px;
+}
+
+.sea{
+    position:absolute;
+    margin-top:0px;
+    margin-left:600px;
+    margin-bottom: 0px;
+    height:30px;
+    width:200px;
+    border-radius: 10px 10px 10px 10px;
+    
+}
+.sb{
+    position:absolute;
+    width:30px;
+    background-color: white;
+    padding-right: 30px;
+    margin-top: 4px;
+    margin-right: 0px;
+    margin-left: 761px;
+    border-style: none;
+
+}
+#searchicon{
+    height:20px;
+    width:20px;
+}
+a:link{
+    text-decoration: none;
+    color: blue;
+}
+a:visited{
+    color: blue;
+}
+a:hover{
+    text-decoration: underline;
+    text-shadow: 20px;
+    background-color: rgb(204, 204, 195);
+    border-radius:15px 15px 15px 15px;
+    border-width: 50px;
+}
+
+.card1{
+    background-image: url('bg.jpeg');
+    opacity: 100%;
+    background-size: 1100px 1900px;
+    height:300px;
+    width:440px;
+    margin-top: 0px;
+    padding:40px 450px 150px;
+  
+}
+
+.card2{
+    float:right;
+    position: absolute;
+    background-color: rgba(15, 14, 15, 0.788);
+    height:500px;
+    width:100%;
+    margin-top: 0px;
+}
+.rec{  
+    width:1340px;
+    height:980px;
+    background-color: #00000096;
+    background-size: 1000px 1000px;
+    margin-top:30px;
+    padding-top:1px;
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 90deg;
+    inherits: true;
+  }
+  
+  @property --gradX {
+    syntax: '<percentage>';
+    initial-value: 50%;
+    inherits: true;
+  }
+  
+  @property --gradY {
+    syntax: '<percentage>';
+    initial-value: 0%;
+    inherits: true;
+  }
+
+h1.head1{
+    text-align: center;
+    text-shadow: 5px 6px rgb(0, 0, 0);
+    border-style: groove;
+    border-radius: 15px;
+    border-color: rgba(187, 60, 9, 0.692);
+    color:rgb(255, 255, 255);
+    font-size: 45px;
+    font-family: URW Chancery L, cursive;
+    letter-spacing: 7px;
+
+}
+
+
+:root {
+	--d: 3000ms;
+	--angle: 90deg;
+	--gradX: 100%;
+	--gradY: 50%;
+	--c1: rgb(92, 195, 226);
+	--c2: rgba(5, 40, 134, 0.795);
+}
+
+
+.head1 {
+	font-size: 3vw;
+	margin: max(0rem, 0vw);
+	border: 0.35rem solid;
+	padding: 1vw;
+	border-image: conic-gradient(from var(--angle), var(--c2), var(--c1) 0.1turn, var(--c1) 0.15turn, var(--c2) 0.25turn) 30;
+	animation: borderRotate var(--d) linear infinite forwards;
+}
+
+.head1:nth-child(2) {
+	border-image: radial-gradient(ellipse at var(--gradX) var(--gradY), var(--c1), var(--c1) 10%, var(--c2) 40%) 30;
+	animation: borderRadial var(--d) linear infinite forwards;
+}
+
+@keyframes borderRotate {
+	100% {
+		--angle: 420deg;
+	}
+}
+
+@keyframes borderRadial {
+	20% {
+		--gradX: 100%;
+		--gradY: 50%;
+	}
+	40% {
+		--gradX: 100%;
+		--gradY: 100%;
+	}
+	60% {
+		--gradX: 50%;
+		--gradY: 100%;
+	}
+	80% {
+		--gradX: 0%;
+		--gradY: 50%;
+	}
+	100% {
+		--gradX: 50%;
+		--gradY: 0%;
+	}
+}
+
+
+
+#img1{  
+    height:450px;
+    width:470px;
+}
+
+hr{  
+    color: green;
+}
+
+#title{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+#r1{
+    font-size: 20px;
+    color:black;
+    
+}
+#reclink{
+    text-align: right;
+}
+.recipe1{
+     width:45%;
+     height:400px;
+     background-color: white;
+     float:left;
+     padding-bottom:10px;
+     border:1px solid black;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.recipe2{
+    width:45%;
+    height:400px;
+    background-color:white;
+    float:right;
+    padding-bottom:10px;
+    border:1px solid black;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.recipe3{
+    width:45%;
+    height:400px;
+    background-color: white;
+    float:left;
+    margin-top:15px;
+    border:1px solid black;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.recipe4{
+    width:45%;
+    height:400px;
+    background-color: white;
+    float:right;
+    margin-top:15px;
+    border:1px solid black;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#img2{
+    max-width: 100%;
+    height:auto;
+    height:350px;
+    width:420px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   
+}
+
+#middle {
+    transition: .5s ease;
+    opacity: 0;
+    top: 0%;
+    left: 60%;
+    transform: translate(40%, -630%);
+    -webkit-transform: translate(40%, -630%);
+    -moz-transform: translate(40%, -630%);
+    -ms-transform: translate(40%, -630%);
+    -o-transform: translate(40%, -630%);
+}
+  
+  .recipe1:hover #img2, .recipe2:hover #img2, .recipe3:hover #img2, .recipe4:hover #img2 {
+    opacity: 0.3;
+  }
+  
+  .recipe1:hover #middle, .recipe2:hover #middle, .recipe3:hover #middle, .recipe4:hover #middle {
+    opacity: 1;
+  }
+  
+  #text {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    width:100px;
+    padding-left:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+input[type=submit] {
+    width: 200px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+input[type=submit]:hover {
+    background-color: #2a852f;
+}
+
+.respond {
+    margin-top: 10px;
+    color:rgb(0, 0, 0);
+    background-color: rgba(57, 69, 122, 0.432);
+  }
+  
+  .respond input[type='text'],
+  .respond input[type='email'],
+  .respond textarea {
+    margin-bottom: 10px;
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    line-height: 1.4em;
+  }
+  .end{
+    margin-top: 520px;
+  }
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    body{
+        width:100%;
+    }
+}

@@ -1,0 +1,109 @@
+<html>
+<head>
+<title>RECIPE HUB</title>
+<link rel="stylesheet" type="text/css" href="food.css">
+<script src="foods.js"></script>
+</head>
+<body>
+
+<div class="navigation">
+<nav><a href="#Home">HOME |</a>
+<a href="#Recipe"> RECIPES |</a>
+<a href="#Forms"> FORMS |</a>
+<a href="#Comments"> COMMENTS |</a>
+<a href="#About"> ABOUT</a>
+
+<input class="sea" id="sear" type="textbox" placeholder="Search">
+<button class="sb"> <img id="searchicon" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/750px-Search_Icon.svg.png">
+</button>
+</nav>
+</div>
+
+
+<div id="Home" class="card1">
+<img id="img1" src="logo.png">
+</div>
+
+<div id="Recipe" class="rec">
+    <h1 class="head1"><i>RECIPES</i></h1>
+    <hr>
+    <div class="recipe1">
+        <img id="img2" src="mexsalad.jpeg">
+        <p align="center" id="r1" ><b>CHOPPED MEXICAN SALAD WITH LIME</b></p>
+        <div id="middle">
+        <a href="https://www.diabetesfoodhub.org/recipes/chopped-mexican-salad-with-lime.html"><div id="text">SEE RECIPE</div> </a>
+        </div> 
+    </div>
+
+    <div class="recipe2">
+        <img id="img2" src="eggtoast.jpeg">
+        <p align="center" id="r1"><b>EGG AND AVOCADO TOAST</b></p>
+        <div id="middle">
+        <a href="https://www.diabetesfoodhub.org/recipes/egg-and-avocado-toasts.html"><div id="text">SEE RECIPE</div></a>
+        </div>
+    </div>
+
+    <div class="recipe3">
+        <img id="img2" src="smoothie.jpeg">
+        <p align="center" id="r1"><b>FRUIT AND ALMOND SMOOTHIE</b></p>
+        <div id="middle">
+            <a href="https://www.diabetesfoodhub.org/recipes/fruit-and-almond-smoothie.html"><div id="text">SEE RECIPE</div></a>
+        </div>
+    </div>
+
+    <div class="recipe4">
+        <img id="img2" src="applecrisp.jpeg">
+        <p align="center" id="r1"><b>APPLE CRISP</b></p>
+        <div id="middle">
+            <a href="https://www.diabetesfoodhub.org/recipes/apple-crisp.html"><div id="text">SEE RECIPE</div></a>
+        </div>
+    </div>
+</div>
+
+<div class="respond">
+    <h1 class="head1" id="Comments"><i>COMMENT SECTION </i> </h1>
+    <h3>Leave a Comment</h3>
+  
+    <form action="post_comment.php" method="post" id="commentform">
+  
+      <label for="comment_author" class="required">Your name</label>
+      <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+  
+      <label for="email" class="required">Your email</label>
+      <input type="email" name="email" id="email" value="" tabindex="2" required="required">
+  
+      <label for="comment" class="required">Your message</label>
+      <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+      <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+      <input name="submit" type="submit" value="Submit comment" />
+  
+    </form>
+  </div>
+
+  <div class="card2">
+    <h1 class="head1" id="About" ><i>ABOUT</i></h1>
+    <p><font size="3px;" color="white" face="Comic Sans MS, Comic Sans, cursive">
+        <b>WELCOME TO THE WORLD OF FLAVORS!</b>
+        </br>
+        </br>
+        We're passionate about food, and we believe that everyone deserves to experience the joy of cooking and eating delicious meals. This recipe hub is your one-stop shop for finding inspiration and guidance in the kitchen, no matter your skill level.
+        Here's what you can expect:
+        <ul type="disc" >
+            <li> <b><u>A diverse collection of recipes:</u></b> From classic comfort food to adventurous international dishes, we have something for every taste and dietary preference.</li>
+            <li> <b><u>Easy-to-follow instructions:</u></b> We believe that cooking should be accessible to everyone, so our recipes are written in clear, concise language with step-by-step instructions and helpful tips.</li>
+            <li> <b><u>Beautiful visuals:</u></b> We know that food is not just about taste, but also about presentation. Our recipes are accompanied by mouthwatering photos to inspire you and guide you through the process.</li>
+            <li> <b><u>A supportive community:</u></b> We encourage feedback and interaction! Share your experiences, ask questions, and connect with other food lovers in the comments section.</li>
+        </ul>
+    </font>
+    </p>
+    </div>
+
+  <footer>
+    <div class="end">
+        <p align="left">
+        Copyright 1999-2024 by XYZ. All Rights Reserved.  </p>
+    </div>
+  </footer>
+
+</body>
+</html>
